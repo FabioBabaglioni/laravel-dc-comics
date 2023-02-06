@@ -35,9 +35,9 @@ class MainController extends Controller
     public function personStore(request $request)
     {
         $data = $request -> validate([
-            'firstName' => 'require| string|max:32',
-            'lastName' => 'require| string|max:32',
-            'dateOfBirth' => 'require|date',
+            'firstName' => 'required|string|max:32',
+            'lastName' => 'required|string|max:32',
+            'dateOfBirth' => 'required|date',
             'height' => 'integer|min:0|max:230',
         ]);
     
