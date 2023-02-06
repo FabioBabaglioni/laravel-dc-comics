@@ -5,6 +5,10 @@
 <div class="container">
     <h2 class="text-center py-3">Anagrafica Cittadini</h2>
 
+    <a href="{{route('person.create')}}">
+        <div class="text-center fs-5 pb-3">Inserisci anagrafica nuovo cittadino</div>
+    </a>
+
     @foreach ($people as $person)
 
     <div>
