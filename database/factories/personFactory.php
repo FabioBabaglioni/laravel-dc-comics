@@ -18,7 +18,7 @@ class personFactory extends Factory
     {
         return [
             'firstName' => fake() -> firstName(),
-            'lasttName' => fake() -> lastName(),
+            'lastName' => fake() -> lastName(),
             'dateOfBirth' => fake() -> date(),
             'height' => fake() -> boolean() ? fake() -> numberBetween(0, 230) : 0,
         ];

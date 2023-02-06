@@ -2,11 +2,11 @@
 
 @section('content')
 
-<h2>Vedi tutti i cittadini</h2>
+<h2>Anagrafica Cittadini</h2>
 
 <ul>
     @foreach ($people as $person)
-    <li>{{$person -> firstName}}</li>
+    <li>{{$person -> lastName}} - {{$person -> firstName}}</li>
     @endforeach
 </ul>
 
