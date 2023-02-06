@@ -19,6 +19,10 @@
             <span><i class="fa-solid fa-trash"></i></span>
         </a>
 
+        <a href="{{route('person.edit', $person)}}">
+            <span><i class="fa-solid fa-pen-to-square"></i></i></span>
+        </a>
+
     </div>
 
     @endforeach
