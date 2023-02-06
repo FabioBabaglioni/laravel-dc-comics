@@ -6,7 +6,10 @@
 
 <ul>
     @foreach ($people as $person)
-    <li>{{$person -> lastName}} - {{$person -> firstName}}</li>
+    <a href="{{route('person.show', $person)}}">
+        <li>{{$person -> lastName}} - {{$person -> firstName}}</li>
+    </a>
+
     @endforeach
 </ul>
 
