@@ -10,7 +10,7 @@ class MainController extends Controller
 {
     public function home(){
 
-        $people = Person::all();
+        $people = Person::orderBy('created_at', 'DESC') -> get();
 
         return view('pages.home', compact('people'));
     }

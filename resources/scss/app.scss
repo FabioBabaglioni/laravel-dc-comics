@@ -4,3 +4,29 @@ a {
     text-decoration: none;
     color: black;
 }
+
+.edit {
+    &:hover {
+        color: green;
+    }
+}
+
+.delete {
+    &:hover {
+        color: red;
+    }
+}
+
+.ms_card {
+    background-color: lightblue;
+    border: solid 2px blue;
+    border-radius: 40px;
+    width: calc(98% / 3);
+    padding: 15px;
+}
+
+.ms_singol_card {
+    text-align: center;
+    border: 2px solid blue;
+    width: 50%;
+}

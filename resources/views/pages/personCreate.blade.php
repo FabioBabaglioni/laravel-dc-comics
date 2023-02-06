@@ -25,7 +25,7 @@
         </div>
 
         <div class="col-12">
-            <button type="submit" class="btn btn-success fs-5">Aggiungi anagrafica</button>
+            <button type="submit" class="btn btn-outline-success fs-5">Aggiungi anagrafica</button>
         </div>
     </form>
 </div>
