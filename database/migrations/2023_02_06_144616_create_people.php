@@ -14,8 +14,14 @@ return new class extends Migration
     public function up()
     {
         Schema::create('people', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table -> id();
+
+            $table -> string('firstName', 32);
+            $table -> string('lasttName', 32);
+            $table -> date('dateOfBirth');
+            $table -> integer('height') -> nullable() -> unsigned();
+
+            $table -> timestamps();
         });
     }
 
