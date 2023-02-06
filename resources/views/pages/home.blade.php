@@ -2,15 +2,23 @@
 
 @section('content')
 
-<h2>Anagrafica Cittadini</h2>
+<div class="container">
+    <h2 class="text-center py-3">Anagrafica Cittadini</h2>
 
-<ul>
     @foreach ($people as $person)
-    <a href="{{route('person.show', $person)}}">
-        <li>{{$person -> lastName}} - {{$person -> firstName}}</li>
-    </a>
+
+    <div>
+        <a href="{{route('person.show', $person)}}">
+            <span>{{$person -> lastName}} - {{$person -> firstName}} </span>
+        </a>
+        <a href="{{route('person.delete', $person)}}">
+            <span><i class="fa-solid fa-trash"></i></span>
+        </a>
+
+    </div>
 
     @endforeach
-</ul>
+
+</div>
 
 @endsection
